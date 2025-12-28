@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificar Status do Aluno</title>
-</head>
-<body>
-    <h1>Verificar Status do Aluno</h1>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Status do Aluno</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class= "container">
+            <h1>Verificar Status do Aluno</h1>
+        <form id="forms">
+            <fieldset>
+                <label for="nota1">1º Bimestre</label>
+                <br>
+                <input type="number" name="nota1" id="nota1" step="0.01">
+            </fieldset>
+            <fieldset>
+                <label for="nota2">2º Bimestre</label>
+                <br>
+                <input type="number" name="nota2" id="nota2" step="0.01">
+            </fieldset>
+            <fieldset>
+                <label for="nota3">3º Bimestre</label>
+                <br>
+                <input type="number" name="nota3" id="nota3" step="0.01">
+            </fieldset>
+            <fieldset>
+                <label for="nota4">4º Bimestre</label>
+                <br>
+                <input type="number" name="nota4" id="nota4" step="0.01">
+            </fieldset>
+            <br>
+            <p class="msgErro"></p>
+            <button class="btn" type= "submit">Calcular</button>
+        </form>
+        <p class="resultado">Resultado</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
